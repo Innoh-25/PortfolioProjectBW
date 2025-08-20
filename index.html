@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Page title and stylesheet link -->
+    <link rel="stylesheet" href="style.css">
+    <title>It's Innoh_25</title>
+</head>
+<body>
+    <div class="container">
+            <!-- Navigation bar -->
+        <div class="navbar">
+                <!-- MyPortfolio logo -->
+            <div class="logo glow">
+                <div class="m_word">My</div>
+                <div class="m_underline">Portfolio</div>
+            </div>
+            <div class="menu">
+                
+                    <!-- Navigation tabs using labels -->
+                <div class="navtabs">
+                    <label for="About_Me" class="About_Me">About Me</label>
+                    <label for="My_Interests" class="My_Interests">My Interests</label>
+                    <label for="Skills" class="Skills">Skills</label>
+                    <label for="Education"  class="Education">Education</label>
+                    <label for="My_Projects" class="My_Projects">My Projects</label>
+                    <label for="Contact_Me" class="Contact_Me">Contact Me</label>
+                </div>
+
+                
+            </div>
+        </div>
+        <div class="home_page">
+            <div class="home_details">
+                    <!-- Hidden radio inputs for tab control -->
+                <input type="radio" name="menu_item" id="About_Me" checked  hidden>
+                <input type="radio" name="menu_item" id="My_Interests" hidden>
+                <input type="radio" name="menu_item" id="Skills" hidden>
+                <input type="radio" name="menu_item" id="Education" hidden>
+                <input type="radio" name="menu_item" id="My_Projects" hidden>
+                <input type="radio" name="menu_item" id="Contact_Me" hidden>
+
+                <div class="my_pic">
+                    <img src="my_pic.png" alt="my photo">
+                </div>
+
+
+                <div class="side_info">
+                        <!-- About section content -->
+                    <section class="About_MeC cont">
+                        <div class="intro">
+                            <h3>Who I am</h3>
+                        </div>
+                        <div class="details">
+                                <!-- Typing animation -->
+                            <h5><span class="typing">Innocent Omurwa</span></h5>
+                            <p>Medical student with a deep appreciation for chess, mathematics, and coding. I’m drawn to disciplines that challenge both logic and creativity, and I thrive where analytical thinking meets human insight. Whether I’m diagnosing a clinical case, navigating a complex chess position, solving mathematical puzzles, or crafting clean, semantic code, I’m driven by curiosity and the pursuit of elegant solutions.
+My journey into tech began with a fascination for how structure and design influence user experience. Today, I’m building accessible websites, exploring Python’s expressive power, and applying mathematical reasoning to both code and clinical problem-solving. To me, thoughtful code is like a well-played chess game or a precise diagnosis — deeply satisfying and beautifully structured.</p>
+                        </div>
+                        <div class="in_photo">
+                            <img src="about_bg.png" alt="my about photo">
+                        </div>
+                    </section>
+                    <!-- My Interests content -->
+                    <section class="My_InterestsC cont">
+                        <div class="intro">
+                            <h3>What interests me</h3>
+                            <p><i>Hover over the images to see magic &#x1F609;</i></p>
+                        </div>
+                        <div class="details">
+                            <div class="int_item">
+                                <div class="int_pic">
+                                    <img src="chess.jpg" alt="chess picture">
+                                    <h6>CHESS</h6>
+                                </div>
+                                <p>Chess</p>
+                            </div>
+                            <div class="int_item">
+                                <div class="int_pic">
+                                    <img src="medicine.jpg" alt="medicine picture">
+                                    <h6>MED</h6>
+                                </div>
+                                <p>Medicine and Surgery</p>
+                            </div>
+                            <div class="int_item">
+                                <div class="int_pic">
+                                    <img src="coding.jpg" alt="coding picture">
+                                    <h6>CODE</h6>
+                                </div>
+                                <p>Programming</p>
+                            </div>
+                            <div class="int_item">
+                                <div class="int_pic">
+                                    <img src="music.jpeg" alt="music picture">
+                                    <h6>MUSIC</h6>
+                                </div>
+                                <p>Piano & Music</p>
+                            </div>
+                            <div class="int_item">
+                                <div class="int_pic">
+                                    <img src="maths.jpeg" alt="maths picture">
+                                    <h6>MATH</h6>
+                                </div>
+                                <p>Mathematics</p>
+                            </div>
+                            
+                        </div>
+                    </section>
+                        <!-- Skills section content -->
+                    <section class="SkillsC cont">
+                        <div class="intro">
+                            <h3>My Programming Skills</h3>
+                        </div>
+                        <div class="details">
+                            <div class="progress">
+                                <div class="language">HTML</div>
+                                <div class="progress-circle" style="--progress: 40">
+                                    <span class="progress-text">80%</span>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="language">CSS</div>
+                                <div class="progress-circle" style="--progress: 40">
+                                    <span class="progress-text">80%</span>
+                                </div>
+                            </div>
+
+                            <div class="progress">
+                                <div class="language">Python</div>
+                                <div class="progress-circle python" style="--progress: 25">
+                                    <span class="progress-text">50%</span>
+                                </div>
+                            </div>
+
+                            <div class="progress">
+                                <div class="language">JavaScript</div>
+                                <div class="progress-circle JavaScript" style="--progress: 12.5">
+                                    <span class="progress-text">25%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="EducationC cont">
+                        <!-- Education background content -->
+                        <div class="intro">
+                            <h3>My Education Background</h3>
+                        </div>
+                        <div class="details">
+                            <div class="ed_item topic" id="topic">
+                                <span class="course">What?</span>
+                                <span class="institution">Where?</span>
+                                <span class="duration">When?</span>
+                            </div>
+                            <div class="ed_item">
+                                <span class="course">Bachelor of Medicine and Bachelor of Surgery</span>
+                                <span class="institution">The University of Nairobi</span>
+                                <span class="duration">Ongoing</span>
+                            </div>
+                            <div class="ed_item">
+                                <span class="course">Software Development</span>
+                                <span class="institution">Power Learn Project Academy</span>
+                                <span class="duration">Ongoing</span>
+                            </div>
+                            <div class="ed_item">
+                                <span class="course">Future Proof with Python</span>
+                                <span class="institution">Kibo School</span>
+                                <span class="duration">June 2023 to August 2023</span>
+                            </div>
+                        </div>
+                        <div class="cv">
+                            <a href="MyCv.zip" class="dowload_btn">Download My CV</a>
+                        </div>
+                        <div class="in_photo">
+                            <img src="education.jpg" alt="my about photo">
+                        </div>
+                    </section>
+                    <section class="My_projectsC cont">
+                        <div class="intro">
+                            <h3>What I have created so far</h3>
+                        </div>
+                        <div class="details">
+                            <h5>Project name</h5>
+                            <p>Gomoku</p>
+                            <h5>Language used</h5>
+                            <p>Python</p>
+                            <h5>Project description</h5>
+                            <p>This game is a personalized twist on classic Tic-Tac-Toe, played on a 5×5 grid where players use first characters from their first names instead of X’s and O’s, transforming each match into a unique signature duel. The objective is to align at least four letters in a row—vertically, horizontally, or diagonally—to win. By replacing generic symbols with name-based tokens, the game adds identity and flair to each move, blending the simplicity of Tic-Tac-Toe with the strategic depth of Gomoku. It’s a playful yet thoughtful reimagining that turns every match into a reflection of the players themselves.</p>
+                            <h5>Project link</h5>
+                            <a href="https://replit.com/join/hjrvjbsluz-innohomurwa" target="_blank">Go To My Project</a>
+                        </div>
+                    </section>
+                        <!-- Contact section content -->
+                    <section class="Contact_MeC cont">
+                        <div class="intro">
+                            <h3>You can find me here &#x1F447;</h3>
+                        </div>
+                        <div class="details">
+                            <p><a href="mailto:omurwainnocent@gmail.com" target="_blank">Click here</a>  to send me an email <br> Or <br> click on the icons below to get in touch &#x1F60A;</p> 
+                            <div class="separator"></div>
+                            <div class="icon-container">
+                                <a href="https://www.facebook.com/share/16bpHdaUTL/" class="icon facebook" target="_blank">f</a>
+                                <a href="https://x.com/Innoh_25?t=DP3hekuxg5kMJaKzvL_8jQ&s=09" class="icon x" target="_blank">X</a>
+                                <a href="https://www.instagram.com/_innoh25?utm_source=qr&igsh=MWw1Y3BkZDg4ajAxMw==" class="icon instagram" target="_blank">
+                                    <div class="circle"></div>
+                                    <div class="dot"></div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/innocent-omurwa-04b01527a" class="icon linkedin" target="_blank">in</a>
+                        </div>
+                        <div class="in_photo">
+                            <img src="contact.jpg" alt="my about photo">
+                        </div>
+                    </section>
+                </div>
+                       
+                
+            </div>
+        </div>
+        
+    </div>
+    <footer>&copy 2025 Innocent Omurwa. All rights reserved.</footer>
+</body>
+
+</html>

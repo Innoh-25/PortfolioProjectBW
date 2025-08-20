@@ -1,0 +1,611 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* Navigation bar styling */
+.navbar{
+    position: relative;
+    width: 100%;
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* logo styling */
+.logo{
+    font-weight: 700;
+    font-size: 28px;
+    padding: 0;
+}
+
+/* logo animation */
+.glow{
+    margin: 20px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    position: relative;
+    z-index: 1;
+}
+
+
+.glow::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: maroon;
+    border-radius: 25px;
+    z-index: -1;
+    border: none;
+    outline: none;
+}
+
+.glow::before{
+    content: '';
+    background: linear-gradient(
+        45deg,
+        #ff0000,#ff7300,#fffb00,#48ff00,
+        #00ffd5,#002bff,#ff00c8,#ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    background-size: 600%;
+    border-radius: 25px;
+    filter: blur(8px);
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+    animation: glow 5s linear infinite;
+}
+
+@keyframes glow {
+    0%{background-position: 0 0;}
+    50%{background-position: 400% 0;}
+    100%{background-position: 0 0;}
+}
+
+
+.logo{
+    padding: 1rem 6rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+.navbar .logo .m_word{
+    color: white;
+}
+
+.navbar .logo .m_underline{
+    color: gold;
+}
+
+.navtabs{
+    position: relative;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.navtabs label{
+    padding: 15px 40px;
+    border-radius: 20px;
+    color: maroon;
+    z-index: 1;
+}
+
+.navtabs label:hover{
+    background-color: maroon;
+    color: #fff;
+    transition: 1s;
+    font-size: 120%;
+}
+
+/* main content styling */
+.home_page{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url(background1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.home_details{
+    align-items: center;
+    justify-content: space-between;
+    font-size: 50px;
+    position: relative;
+    display: flex;
+    padding: 2% 4%;
+
+}
+
+.my_pic{
+    flex-basis: 35%;
+    border: none;
+}
+
+.my_pic img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+.side_info{
+    position: relative;
+    flex-basis: 65%;
+}
+
+
+.side_info .cont{
+    display: none;
+}
+
+/* Typing animation container */
+.typing{
+    font-size: 30px;
+    color: #fff;
+    border-right: 2px solid gold;
+    margin-left: 5px;
+    width: 0ch;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 5s steps(16) infinite;
+}
+
+/* Typing animation keyframes */
+@keyframes typing{
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 17ch;
+    }
+    100%{
+        width: 0ch;
+    }
+}
+
+/* Show content when corresponding hidden radio is checked */
+#About_Me:checked ~ .side_info .About_MeC,
+#My_Interests:checked ~ .side_info .My_InterestsC,
+#Skills:checked ~ .side_info .SkillsC,
+#Education:checked ~ .side_info .EducationC,
+#My_Projects:checked ~ .side_info .My_projectsC,
+#Contact_Me:checked ~ .side_info .Contact_MeC{
+    display: block;
+}
+
+/* main content styling */
+.intro{
+    color: gold;
+    background-color:rgb(54, 69, 79,0.7) ;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.details{
+   background-color: rgb(106,90,205,0.5);
+   border-radius: 0px 0px 20px 20px;
+   justify-content: center;
+}
+
+.My_InterestsC .intro p{
+    font-size: 23px;
+    color: #fff;
+}
+
+.details h5{
+    color: white;
+}
+
+.details p{
+    color: #DCAE96;
+    font-size: 20px;
+}
+
+.intro,
+.details{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+/* rounded photo positioned absolutely */
+.in_photo{
+    height: 150px;
+    width: 150px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 5px solid gold;
+    position: absolute;
+    top: -130px;
+    left: 40%;
+}
+
+.in_photo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.int_item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.int_item .int_pic{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.int_item .int_pic img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.int_item .int_pic h6{
+    position: absolute;
+    bottom: 10px;
+    color: gold;
+    width: 100%;
+    transition: all 1s;
+}
+
+.int_pic img:hover ~ h6{
+    color: #F7E7CE;
+    transform: translate(0,-80%);
+    font-size: 110%;
+
+}
+
+.My_InterestsC .details{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* progress circles */
+.progress{
+  display: flex;
+  align-items: center;
+  border: 2px solid #36454F;
+  border-radius: 10px;
+  padding: 0 10%;
+  justify-content: space-between;
+}
+
+.progress .language{
+    color: #DCAE96;
+}
+
+.progress_value{
+    position: absolute;
+}
+
+.progress-circle {
+  --size: 120px;
+  --progress: 100; /* Set this dynamically via inline style or CSS */
+
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background: conic-gradient(
+    gold calc(var(--progress) * 2%), 
+    #e0e0e0 0
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.progress-circle::before {
+  content: '';
+  position: absolute;
+  width: calc(var(--size) * 0.75);
+  height: calc(var(--size) * 0.75);
+  background: white;
+  border-radius: 50%;
+}
+
+.progress-text {
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: maroon;
+}
+
+/* education section styling */
+.ed_item{
+    display: flex;
+    font-size: 23px;
+    align-items: center;
+    border: 2px solid #36454F;
+    padding: 15px;
+    border-radius: 10px
+}
+
+#topic{
+    background-color: rgb(128,0,0,0.2);
+    border: none;
+}
+
+.ed_item span{
+    flex-basis: 33%;
+}
+
+.ed_item .course{
+    color: #DCAE96;
+}
+
+.ed_item .institution{
+    color: #F7E7CE;
+}
+
+.ed_item .duration{
+    color: #fff;
+}
+
+.cv a{
+    text-decoration: none;
+    background-color: #DCAE96;
+    color: maroon;
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 10px;
+    border: 5px solid gold;
+}
+
+.cv{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* My project section styling */
+.My_projectsC .details h5{
+    color: #DCAE96;
+}
+
+.My_projectsC .details p{
+    color: #F7E7CE;
+}
+
+.My_projectsC .details a{
+    text-decoration: none;
+    background-color: #DCAE96;
+    color: maroon;
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 10px;
+    border: 5px solid gold;
+}
+
+
+/* contact me styling */
+.icon-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+  position: relative;
+  text-decoration: none;
+}
+
+
+/* Facebook */
+.facebook {
+  background-color: #3b5998;
+  transition: all 0.5s ease-in-out;
+}
+
+.facebook:hover{
+  background-color: rgb(59, 89, 152,0.5);
+  font-size: 120%;
+}
+/* X */
+.x {
+  background-color: #000;
+  transition: all 0.5s ease-in-out;
+}
+
+.x:hover{
+    background-color: rgb(0, 0, 0,0.5);
+    font-size: 120%;
+}
+
+/* Instagram - now square with rounded corners */
+.instagram {
+  border-radius: 15%;
+  background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf);
+  transition: all 0.5s ease-in-out;
+}
+
+.instagram:hover{
+    background-color: rgb(206, 102, 142,0.5);
+    font-size: 120%;
+}
+
+.instagram .circle {
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.instagram .dot {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+}
+
+/* LinkedIn */
+.linkedin {
+  background-color: #0077B5;
+  font-size: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.linkedin:hover{
+    background-color: rgb(0, 119, 181,0.5);
+    font-size: 120%;
+}
+
+.Contact_MeC .details p{
+    line-height: 1.6;
+    letter-spacing: 2px;
+}
+
+.Contact_MeC .details p a{
+    color: blue;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255,0.3);
+}
+
+.separator{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: darkgrey;
+    margin-top: 20px;
+}
+
+/* footer*/
+footer{
+    padding: 15px;
+    text-align: center;
+    color: maroon;
+    background-color: #DCAE96;
+}
+
+
+/* making the website responsive and well laid out in other screens */
+@media (max-width:1150px){
+    .navbar{
+    width: 100%;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.side_info .About_MeC{
+    position: relative;
+    top: 150px;
+}
+
+.my_pic{
+    position: absolute;
+    top: -30%;
+    left:0;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: gold;
+}
+
+.my_pic img{
+    border-radius: 50%;
+}
+
+
+}
+
+@media (max-width:850px){
+    .navtabs{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home_page{
+    height: 260vh;
+}
+.home_details{
+    display: flex;
+    flex-direction: column;
+}
+.navtabs{
+    width: 100%;
+}
+.navtabs label{
+    padding: 15px;
+}
+.navtabs label:hover{
+    position: relative;
+    width: 100%;
+}
+
+.my_pic{
+    position: relative;
+    top: 0;
+    left:0;
+    height: 200px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: gold;
+}
+}
+
+.cont{
+    position: relative;
+    margin-top: 50px;
+}
