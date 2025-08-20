@@ -1,10 +1,10 @@
-**It's Innoh_25! 🚀**
+**I am Walter 🚀**
 
 Welcome to my portfolio website, a place where I showcase my journey as a medical student with a passion for tech! 🧑‍⚕️💻
 
 **🌟 About Me**
 
-I'm Innocent Omurwa, a medical student who loves to explore the intersections of logic and creativity. My interests span across chess ♟️, mathematics ➕, and coding 👨‍💻. I believe in elegant solutions, whether it's diagnosing a clinical case or crafting clean code. My tech journey began with a fascination for how design influences user experience, and now I'm building accessible websites and exploring Python's power.
+I'm Brilliant Walter, a medical student who loves to explore the intersections of logic and creativity. My interests span across chess ♟️, mathematics ➕, and coding 👨‍💻. I believe in elegant solutions, whether it's diagnosing a clinical case or crafting clean code. My tech journey began with a fascination for how design influences user experience, and now I'm building accessible websites and exploring Python's power.
 
 **🧠 My Interests**
 
@@ -50,8 +50,6 @@ Software Development at Power Learn Project Academy (Ongoing).
 
 Future Proof with Python at Kibo School (June 2023 to August 2023).
 
-You can download my CV through a button provided in the portfolio.
-
 **🚀 My Projects**
 
 I love bringing ideas to life through code! One of my notable projects is:
@@ -64,12 +62,10 @@ In the website is a link to the game. You really should try it out!
 
 **✉️ Contact Me**
 
-Feel free to reach out! You can send me an email by clicking a link provided in the websiate.
+Feel free to reach out! You can send me an email by clicking a link provided in the website.
 
 You can also find me on:
 
-
-Facebook 
 
 
 X (Twitter) 
@@ -80,4 +76,4 @@ Instagram
 
 LinkedIn 
 
-© 2025 Innocent Omurwa. All rights reserved. 
+© 2025 Brilliant Walter. All rights reserved. 
