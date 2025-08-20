@@ -55,33 +55,6 @@ body{
     outline: none;
 }
 
-.glow::before{
-    content: '';
-    background: linear-gradient(
-        45deg,
-        #ff0000,#ff7300,#fffb00,#48ff00,
-        #00ffd5,#002bff,#ff00c8,#ff0000
-    );
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    z-index: -1;
-    background-size: 600%;
-    border-radius: 25px;
-    filter: blur(8px);
-    transition: opacity 0.3s ease-in-out;
-    opacity: 1;
-    animation: glow 5s linear infinite;
-}
-
-@keyframes glow {
-    0%{background-position: 0 0;}
-    50%{background-position: 400% 0;}
-    100%{background-position: 0 0;}
-}
-
 
 .logo{
     padding: 1rem 6rem;
@@ -177,7 +150,7 @@ body{
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 5s steps(16) infinite;
+    animation: typing 5s steps(14) infinite;
 }
 
 /* Typing animation keyframes */
@@ -186,7 +159,7 @@ body{
         width: 0ch;
     }
     50%{
-        width: 17ch;
+        width: 15ch;
     }
     100%{
         width: 0ch;
@@ -559,7 +532,6 @@ footer{
     height: 250px;
     width: 250px;
     border-radius: 50%;
-    background-color: gold;
 }
 
 .my_pic img{
@@ -601,7 +573,6 @@ footer{
     height: 200px;
     width: 250px;
     border-radius: 50%;
-    background-color: gold;
 }
 }
 
